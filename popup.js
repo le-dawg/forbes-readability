@@ -21,11 +21,5 @@ changeColor.addEventListener("click", async () => {
 // current page
 function setPageReadable() {
   document.getElementsByClassName("view view-offer")[0].remove()
-  // document.querySelectorAll("*[id^=offer]").remove();
-//  let chang1 = document.querySelectorAll("*[id^=offer]");
-  let dellist = document.getElementsByClassName("paywall")[0].style.filter = "blur(0px)"; //.style.filter = "blur(0px)";
-  // OBSOLETE delete = dellistp[0];
-  // chrome.storage.sync.get("color", ({ color }) => {
-  //   document.body.style.backgroundColor = color;
-  // });
+  document.getElementsByClassName("paywall")[0].style.filter = "blur(0px)";
 }
