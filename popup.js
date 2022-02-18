@@ -22,7 +22,9 @@ changeColor.addEventListener("click", async () => {
 function setPageReadable() {
   // document.getElementsByTagName("custom-script")[0].remove()
   document.getElementsByClassName("paywall")[0].style.filter = "blur(0px)";
+  // None of these work ... they sometimes work in the console but I cannot understand why they do not do so reliably.
   // document.getElementById("checkout-container").remove();
   // document.getElementsByClassName("lazy-transclude")[0].remove();
   //let removablelist = document.getElementsByClassName("view view-offer")[0].remove();
+  // document.getElementsByClassName("pn-boilerplate__body")[0].remove()
 }
