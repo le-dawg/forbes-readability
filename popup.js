@@ -20,8 +20,7 @@ changeColor.addEventListener("click", async () => {
 // The body of this function will be executed as a content script inside the
 // current page
 function setPageReadable() {
-//  let remo1 = document.getElementById("checkout-container");
-  // document.getElementById("view-offer").style.filter = "blur(10px)";
+  document.getElementsByClassName("view view-offer")[0].remove()
   // document.querySelectorAll("*[id^=offer]").remove();
 //  let chang1 = document.querySelectorAll("*[id^=offer]");
   let dellist = document.getElementsByClassName("paywall")[0].style.filter = "blur(0px)"; //.style.filter = "blur(0px)";
